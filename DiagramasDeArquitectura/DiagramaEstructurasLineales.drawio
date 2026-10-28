@@ -1,0 +1,208 @@
+<mxfile host="65bd71144e">
+    <diagram id="uml-estructuras-lineales" name="Diagrama UML - Estructuras Lineales">
+        <mxGraphModel dx="1390" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" background="#FAF9F5" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="hdr_kicker" value="PORTAFOLIO TÉCNICO  ·  UNIDAD 1  ·  ARQUITECTURA DE SOFTWARE EN JAVA" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=1;fontColor=#2F5D50;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="28" width="900" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="hdr_title" value="Diagrama de Clases UML — Suite de Estructuras de Datos Lineales" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Georgia;fontSize=26;fontStyle=1;fontColor=#1C1B18;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="50" width="1200" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="hdr_sub" value="Caso Grupo 3: Lista de Reproducción Multimedia con Bucle Continuo (Playlist)   —   Geovanny Francisco Ríos Rodríguez" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=#5C5A54;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="88" width="1200" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="hdr_line" value="" style="endArrow=none;html=1;strokeColor=#1C1B18;strokeWidth=2;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="60" y="122" as="sourcePoint"/>
+                        <mxPoint x="1740" y="122" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="uml_main" value="Main" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#F5F3EE;strokeColor=#1C1B18;strokeWidth=2;fontFamily=Helvetica;fontSize=15;fontColor=#1C1B18;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="150" width="360" height="104" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_main_attrs" value="&#10;" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontColor=#5C5A54;" parent="uml_main" vertex="1">
+                    <mxGeometry y="34" width="360" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_main_line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#E2DFD7;" parent="uml_main" vertex="1">
+                    <mxGeometry y="56" width="360" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_main_methods" value="+ main(args: String[]): void   [static]" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontStyle=1;fontColor=#1C1B18;" parent="uml_main" vertex="1">
+                    <mxGeometry y="64" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_arreglo" value="ArregloLineal" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#F0F4F8;strokeColor=#3A506B;strokeWidth=2;fontFamily=Helvetica;fontSize=14;fontColor=#1C1B18;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="360" width="315" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_arreglo_attrs" value="- arreglo: int[]&#10;- capacidad: int&#10;- tamanio: int" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontColor=#1C1B18;" parent="uml_arreglo" vertex="1">
+                    <mxGeometry y="34" width="315" height="66" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_arreglo_sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#CBD5E1;" parent="uml_arreglo" vertex="1">
+                    <mxGeometry y="100" width="315" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_arreglo_methods" value="+ ArregloLineal(capacidad: int)&#10;+ insertar(valor: int): void&#10;+ insertarEnIndice(indice: int, valor: int): void&#10;+ obtener(indice: int): int&#10;+ actualizar(indice: int, nuevoValor: int): void&#10;+ eliminarEnIndice(indice: int): int&#10;+ buscar(valor: int): int&#10;+ mostrarArreglo(): void&#10;+ getTamanio(): int&#10;+ getCapacidad(): int&#10;+ mostrarMatriz(matriz: int[][]): void [static]&#10;+ sumarMatrices(A: int[][], B: int[][]): int[][] [static]&#10;+ transponerMatriz(matriz: int[][]): int[][] [static]&#10;+ buscarEnMatriz(m: int[][], v: int): boolean [static]" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=11;fontColor=#334155;" parent="uml_arreglo" vertex="1">
+                    <mxGeometry y="108" width="315" height="252" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_lista" value="ListaEnlazada&lt;T&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#F0F4F8;strokeColor=#3A506B;strokeWidth=2;fontFamily=Helvetica;fontSize=14;fontColor=#1C1B18;" parent="1" vertex="1">
+                    <mxGeometry x="405" y="360" width="290" height="225" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_lista_attrs" value="- cabeza: Nodo&lt;T&gt;" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontColor=#1C1B18;" parent="uml_lista" vertex="1">
+                    <mxGeometry y="34" width="290" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_lista_sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#CBD5E1;" parent="uml_lista" vertex="1">
+                    <mxGeometry y="70" width="290" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_lista_methods" value="+ ListaEnlazada()&#10;+ insertarAlInicio(dato: T): void&#10;+ insertarAlFinal(dato: T): void&#10;+ mostrarLista(): void&#10;+ contarNodos(): int&#10;+ buscar(valor: T): boolean" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=11;fontColor=#334155;" parent="uml_lista" vertex="1">
+                    <mxGeometry y="78" width="290" height="147" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_nodo_simple" value="«inner static class»&#10;ListaEnlazada.Nodo&lt;T&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#FAF9F5;strokeColor=#3A506B;strokeWidth=2;fontFamily=Helvetica;fontSize=13;fontColor=#3A506B;" parent="1" vertex="1">
+                    <mxGeometry x="405" y="655" width="290" height="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_nodo_s_attrs" value="~ dato: T&#10;~ siguiente: Nodo&lt;T&gt;" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontColor=#1C1B18;" parent="uml_nodo_simple" vertex="1">
+                    <mxGeometry y="42" width="290" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_nodo_s_sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#CBD5E1;" parent="uml_nodo_simple" vertex="1">
+                    <mxGeometry y="94" width="290" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_nodo_s_methods" value="~ Nodo(dato: T)" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=11;fontColor=#334155;" parent="uml_nodo_simple" vertex="1">
+                    <mxGeometry y="102" width="290" height="43" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_pila" value="PilaLIFO&lt;T&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#F0F4F8;strokeColor=#3A506B;strokeWidth=2;fontFamily=Helvetica;fontSize=14;fontColor=#1C1B18;" parent="1" vertex="1">
+                    <mxGeometry x="725" y="360" width="290" height="275" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_pila_attrs" value="- elementos: Object[]&#10;- capacidad: int&#10;- tope: int" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontColor=#1C1B18;" parent="uml_pila" vertex="1">
+                    <mxGeometry y="34" width="290" height="66" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_pila_sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#CBD5E1;" parent="uml_pila" vertex="1">
+                    <mxGeometry y="100" width="290" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_pila_methods" value="+ PilaLIFO(capacidad: int)&#10;+ push(item: T): void&#10;+ pop(): T&#10;+ peek(): T&#10;+ isEmpty(): boolean&#10;+ isFull(): boolean&#10;+ size(): int&#10;+ getCapacidad(): int&#10;+ mostrarPila(): void" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=11;fontColor=#334155;" parent="uml_pila" vertex="1">
+                    <mxGeometry y="108" width="290" height="167" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_cola" value="ColaCircularFIFO&lt;T&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#F0F4F8;strokeColor=#3A506B;strokeWidth=2;fontFamily=Helvetica;fontSize=14;fontColor=#1C1B18;" parent="1" vertex="1">
+                    <mxGeometry x="1045" y="360" width="295" height="285" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_cola_attrs" value="- elementos: Object[]&#10;- capacidad: int&#10;- frente: int&#10;- finalCola: int&#10;- tamanio: int" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontColor=#1C1B18;" parent="uml_cola" vertex="1">
+                    <mxGeometry y="34" width="295" height="96" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_cola_sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#CBD5E1;" parent="uml_cola" vertex="1">
+                    <mxGeometry y="130" width="295" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_cola_methods" value="+ ColaCircularFIFO(capacidad: int)&#10;+ enqueue(item: T): void&#10;+ dequeue(): T&#10;+ peek(): T&#10;+ isEmpty(): boolean&#10;+ isFull(): boolean&#10;+ size(): int&#10;+ getCapacidad(): int" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=11;fontColor=#334155;" parent="uml_cola" vertex="1">
+                    <mxGeometry y="138" width="295" height="147" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_casoforo" value="«Caso Grupo 3 - Playlist»&#10;CasoForo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#F2F6F4;strokeColor=#2F5D50;strokeWidth=2;fontFamily=Helvetica;fontSize=14;fontColor=#2F5D50;" parent="1" vertex="1">
+                    <mxGeometry x="1370" y="360" width="370" height="275" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_cf_attrs" value="- cabeza: Nodo&#10;- actual: Nodo&#10;- tamanio: int" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontColor=#1C1B18;" parent="uml_casoforo" vertex="1">
+                    <mxGeometry y="42" width="370" height="66" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_cf_sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#D3E0DC;" parent="uml_casoforo" vertex="1">
+                    <mxGeometry y="108" width="370" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_cf_methods" value="+ CasoForo()&#10;+ agregar(cancion: String): void&#10;+ siguiente(): String&#10;+ anterior(): String&#10;+ reproduciendoActual(): String&#10;+ eliminar(cancion: String): boolean&#10;+ mostrarPlaylist(): void&#10;+ isEmpty(): boolean&#10;+ size(): int" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=11;fontColor=#1C1B18;" parent="uml_casoforo" vertex="1">
+                    <mxGeometry y="116" width="370" height="159" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_nodo_doble" value="«inner static class»&#10;CasoForo.Nodo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#FAF9F5;strokeColor=#2F5D50;strokeWidth=2;fontFamily=Helvetica;fontSize=13;fontColor=#2F5D50;" parent="1" vertex="1">
+                    <mxGeometry x="1370" y="695" width="370" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_nodo_d_attrs" value="~ cancion: String&#10;~ siguiente: Nodo&#10;~ anterior: Nodo" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=12;fontColor=#1C1B18;" parent="uml_nodo_doble" vertex="1">
+                    <mxGeometry y="42" width="370" height="68" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_nodo_d_sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#D3E0DC;" parent="uml_nodo_doble" vertex="1">
+                    <mxGeometry y="110" width="370" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="uml_nodo_d_methods" value="~ Nodo(cancion: String)" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=10;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Courier New;fontSize=11;fontColor=#1C1B18;" parent="uml_nodo_doble" vertex="1">
+                    <mxGeometry y="118" width="370" height="42" as="geometry"/>
+                </mxCell>
+                <mxCell id="dep_main_arr" value="«instantiate»" style="endArrow=open;endSize=12;dashed=1;html=1;strokeColor=#3A506B;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;fontFamily=Helvetica;fontSize=11;fontColor=#3A506B;labelBackgroundColor=#FAF9F5;" parent="1" source="uml_main" target="uml_arreglo" edge="1">
+                    <mxGeometry x="0.45" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="900" y="300"/>
+                            <mxPoint x="217" y="300"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="dep_main_lista" value="«instantiate»" style="endArrow=open;endSize=12;dashed=1;html=1;strokeColor=#3A506B;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;fontFamily=Helvetica;fontSize=11;fontColor=#3A506B;labelBackgroundColor=#FAF9F5;" parent="1" source="uml_main" target="uml_lista" edge="1">
+                    <mxGeometry x="0.45" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="900" y="300"/>
+                            <mxPoint x="550" y="300"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="dep_main_pila" value="«instantiate»" style="endArrow=open;endSize=12;dashed=1;html=1;strokeColor=#3A506B;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;fontFamily=Helvetica;fontSize=11;fontColor=#3A506B;labelBackgroundColor=#FAF9F5;" parent="1" source="uml_main" target="uml_pila" edge="1">
+                    <mxGeometry x="0.3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="dep_main_cola" value="«instantiate»" style="endArrow=open;endSize=12;dashed=1;html=1;strokeColor=#3A506B;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;fontFamily=Helvetica;fontSize=11;fontColor=#3A506B;labelBackgroundColor=#FAF9F5;" parent="1" source="uml_main" target="uml_cola" edge="1">
+                    <mxGeometry x="0.45" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="900" y="300"/>
+                            <mxPoint x="1192" y="300"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="dep_main_cf" value="«instantiate»" style="endArrow=open;endSize=12;dashed=1;html=1;strokeColor=#2F5D50;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;fontFamily=Helvetica;fontSize=11;fontStyle=1;fontColor=#2F5D50;labelBackgroundColor=#FAF9F5;" parent="1" source="uml_main" target="uml_casoforo" edge="1">
+                    <mxGeometry x="0.45" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="900" y="300"/>
+                            <mxPoint x="1555" y="300"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="comp_lista_nodo" value="cabeza (1..1)  ──►  (0..*)" style="startArrow=diamondThin;startFill=1;startSize=14;endArrow=open;endSize=10;html=1;strokeColor=#3A506B;strokeWidth=2;fontFamily=Helvetica;fontSize=11;fontColor=#3A506B;labelBackgroundColor=#FAF9F5;" parent="1" source="uml_lista" target="uml_nodo_simple" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="self_nodo_simple" value="siguiente (0..1)" style="endArrow=open;endSize=10;html=1;strokeColor=#3A506B;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;fontFamily=Helvetica;fontSize=11;fontColor=#3A506B;labelBackgroundColor=#FAF9F5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="550" y="800" as="sourcePoint"/>
+                        <mxPoint x="695" y="750" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="550" y="840"/>
+                            <mxPoint x="735" y="840"/>
+                            <mxPoint x="735" y="750"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="comp_cf_nodo" value="cabeza, actual (1)  ──►  (0..*)" style="startArrow=diamondThin;startFill=1;startSize=14;endArrow=open;endSize=10;html=1;strokeColor=#2F5D50;strokeWidth=2;fontFamily=Helvetica;fontSize=11;fontStyle=1;fontColor=#2F5D50;labelBackgroundColor=#FAF9F5;" parent="1" source="uml_casoforo" target="uml_nodo_doble" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="self_nodo_doble" value="siguiente (1) / anterior (1) [Enlace Doble Circular]" style="endArrow=open;endSize=10;startArrow=open;startSize=10;html=1;strokeColor=#2F5D50;strokeWidth=2;edgeStyle=orthogonalEdgeStyle;fontFamily=Helvetica;fontSize=11;fontStyle=1;fontColor=#2F5D50;labelBackgroundColor=#FAF9F5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1480" y="855" as="sourcePoint"/>
+                        <mxPoint x="1630" y="855" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1480" y="905"/>
+                            <mxPoint x="1630" y="905"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="legend_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E2DFD7;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="950" width="1680" height="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_title" value="ESPECIFICACIÓN DE ARQUITECTURA UML, MEMORIA (STACK VS HEAP) Y COMPLEJIDAD ALGORÍTMICA" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontStyle=1;fontColor=#2F5D50;" parent="1" vertex="1">
+                    <mxGeometry x="85" y="965" width="900" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="note_col1" value="• Relaciones UML:&lt;br&gt;  - Línea punteada («instantiate»): Main instancia y ejecuta secuencialmente las 5 estructuras.&lt;br&gt;  - Rombo relleno (Composición): ListaEnlazada y CasoForo administran el ciclo de vida de &lt;br&gt;&amp;nbsp; sus Nodos internos.&lt;br&gt;  - Auto-asociación reflexiva: Punteros siguiente y anterior que enlazan nodos en el Heap." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#5C5A54;" parent="1" vertex="1">
+                    <mxGeometry x="85" y="995" width="545" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="note_col2" value="• Gestión de Memoria (Stack vs Heap):&lt;br&gt;  - En el Stack residen las referencias locales de Main (arreglo, lista, pila, cola, playlist) y variables &lt;br&gt;&amp;nbsp; primitivas.&lt;br&gt;  - En el Heap residen los bloques contiguos (int[], Object[]) de ArregloLineal, PilaLIFO y&lt;br&gt;&amp;nbsp; ColaCircularFIFO, así como los objetos Nodo dispersos de ListaEnlazada y CasoForo." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#5C5A54;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="995" width="540" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="note_col3" value="• Caso Grupo 3 (CasoForo.java) y Cola Circular:&lt;br&gt;  - CasoForo mantiene cabeza y actual; agregar(), siguiente() y anterior() operan en O(1) con enlace &lt;br&gt;&amp;nbsp; circular doble sin null.&lt;br&gt;  - ColaCircularFIFO evita el falso desbordamiento usando avance modular: finalCola = (finalCola + 1) &lt;br&gt;&amp;nbsp; % capacidad en O(1)." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=#5C5A54;" parent="1" vertex="1">
+                    <mxGeometry x="1160" y="990" width="615" height="155" as="geometry"/>
+                </mxCell>
+                <mxCell id="footer_lbl" value="ESPAM MFL  ·  Carrera de Desarrollo de Software  ·  Estructuras de Datos y Algoritmos" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#8C887F;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="1145" width="800" height="24" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
